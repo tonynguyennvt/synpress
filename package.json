@@ -51,6 +51,7 @@
     "@drptbl/gremlins.js": "^2.2.1",
     "@playwright/test": "^1.27.1",
     "@synthetixio/js": "^2.41.0",
+    "@synthetixio/synpress": "^3.0.5",
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/react": "^13.4.0",
     "@types/testing-library__cypress": "^5.0.9",
