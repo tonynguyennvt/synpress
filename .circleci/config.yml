@@ -19,7 +19,7 @@ jobs:
       - node/install:
           install-yarn: true
           node-version: '16.13'
-      - install_synpress
+      # - install_synpress
       - run:
           name: Run Test
           command: yarn test:e2e:ci
