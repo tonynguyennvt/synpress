@@ -2,12 +2,12 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.3
 
-# commands:
-#   install_synpress:
-#     steps:
-#       - run:
-#           name: Install Synpress
-#           command: npm i @synthetixio/synpress
+commands:
+  install_synpress:
+    steps:
+      - run:
+          name: Install Synpress
+          command: npm i @synthetixio/synpress
 
 jobs:
   synpress-test:
@@ -19,7 +19,7 @@ jobs:
       - node/install:
           install-yarn: true
           node-version: '16.13'
-      # - install_synpress
+      - install_synpress
       - run:
           name: Run Test
           command: yarn test:e2e:ci
